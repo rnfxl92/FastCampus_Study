@@ -14,6 +14,8 @@
 		0660198B2B0F967700963D3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0660198A2B0F967700963D3B /* AppDelegate.swift */; };
 		066019912B0F985600963D3B /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066019902B0F985600963D3B /* OnboardingView.swift */; };
 		066019932B0F991C00963D3B /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066019922B0F991C00963D3B /* OnboardingViewModel.swift */; };
+		066019972B0F9E6200963D3B /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066019962B0F9E6200963D3B /* Color+Extensions.swift */; };
+		0660199B2B0F9F9A00963D3B /* OnboardingContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0660199A2B0F9F9A00963D3B /* OnboardingContent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		0660198A2B0F967700963D3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		066019902B0F985600963D3B /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		066019922B0F991C00963D3B /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		066019962B0F9E6200963D3B /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		0660199A2B0F9F9A00963D3B /* OnboardingContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 		066019862B0F93BA00963D3B /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				066019952B0F9E4800963D3B /* Service */,
+				066019942B0F9E3D00963D3B /* Extensions */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -114,6 +120,8 @@
 		066019892B0F93F200963D3B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				066019992B0F9F8800963D3B /* Path */,
+				066019982B0F9F7F00963D3B /* Onboarding */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -146,6 +154,36 @@
 			children = (
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		066019942B0F9E3D00963D3B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				066019962B0F9E6200963D3B /* Color+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		066019952B0F9E4800963D3B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		066019982B0F9F7F00963D3B /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				0660199A2B0F9F9A00963D3B /* OnboardingContent.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		066019992B0F9F8800963D3B /* Path */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Path;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,11 +256,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0660199B2B0F9F9A00963D3B /* OnboardingContent.swift in Sources */,
 				066019932B0F991C00963D3B /* OnboardingViewModel.swift in Sources */,
 				0660198B2B0F967700963D3B /* AppDelegate.swift in Sources */,
 				066019912B0F985600963D3B /* OnboardingView.swift in Sources */,
 				0660197A2B09F41100963D3B /* ContentView.swift in Sources */,
 				066019782B09F41100963D3B /* VoiceMemoApp.swift in Sources */,
+				066019972B0F9E6200963D3B /* Color+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
