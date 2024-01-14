@@ -10,6 +10,9 @@
 		06127D0D2B39C92100189DCD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06127D0C2B39C92100189DCD /* HomeViewModel.swift */; };
 		06127D0F2B39C93D00189DCD /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06127D0E2B39C93D00189DCD /* TodoView.swift */; };
 		06127D112B39C94500189DCD /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06127D102B39C94500189DCD /* TodoViewModel.swift */; };
+		0651C6302B431531006A9F83 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0651C62F2B431531006A9F83 /* Memo.swift */; };
+		0651C6322B431590006A9F83 /* MemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0651C6312B431590006A9F83 /* MemoView.swift */; };
+		0651C6342B431598006A9F83 /* MemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0651C6332B431598006A9F83 /* MemoViewModel.swift */; };
 		066019782B09F41100963D3B /* VoiceMemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066019772B09F41100963D3B /* VoiceMemoApp.swift */; };
 		0660197A2B09F41100963D3B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066019792B09F41100963D3B /* ContentView.swift */; };
 		0660197C2B09F41200963D3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0660197B2B09F41200963D3B /* Assets.xcassets */; };
@@ -35,6 +38,9 @@
 		06127D0C2B39C92100189DCD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		06127D0E2B39C93D00189DCD /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
 		06127D102B39C94500189DCD /* TodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewModel.swift; sourceTree = "<group>"; };
+		0651C62F2B431531006A9F83 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		0651C6312B431590006A9F83 /* MemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoView.swift; sourceTree = "<group>"; };
+		0651C6332B431598006A9F83 /* MemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoViewModel.swift; sourceTree = "<group>"; };
 		066019742B09F41100963D3B /* VoiceMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		066019772B09F41100963D3B /* VoiceMemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceMemoApp.swift; sourceTree = "<group>"; };
 		066019792B09F41100963D3B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,6 +74,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0651C62E2B431527006A9F83 /* Memo */ = {
+			isa = PBXGroup;
+			children = (
+				0651C62F2B431531006A9F83 /* Memo.swift */,
+			);
+			path = Memo;
+			sourceTree = "<group>";
+		};
 		0660196B2B09F41100963D3B = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +160,7 @@
 		066019892B0F93F200963D3B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0651C62E2B431527006A9F83 /* Memo */,
 				06F34DDF2B18FF6000911A99 /* Todo */,
 				066019992B0F9F8800963D3B /* Path */,
 				066019982B0F9F7F00963D3B /* Onboarding */,
@@ -277,6 +292,8 @@
 		06F34DD42B1608D200911A99 /* Memo */ = {
 			isa = PBXGroup;
 			children = (
+				0651C6312B431590006A9F83 /* MemoView.swift */,
+				0651C6332B431598006A9F83 /* MemoViewModel.swift */,
 			);
 			path = Memo;
 			sourceTree = "<group>";
@@ -359,6 +376,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0651C6302B431531006A9F83 /* Memo.swift in Sources */,
 				0660199B2B0F9F9A00963D3B /* OnboardingContent.swift in Sources */,
 				06127D0D2B39C92100189DCD /* HomeViewModel.swift in Sources */,
 				066019932B0F991C00963D3B /* OnboardingViewModel.swift in Sources */,
@@ -368,6 +386,7 @@
 				06F34DDE2B18FCB600911A99 /* CustomNavigationBar.swift in Sources */,
 				06F34DC52B138D0400911A99 /* HomeView.swift in Sources */,
 				06127D112B39C94500189DCD /* TodoViewModel.swift in Sources */,
+				0651C6322B431590006A9F83 /* MemoView.swift in Sources */,
 				06F34DDC2B18FC5B00911A99 /* NavigationBtnType.swift in Sources */,
 				06F34DD32B1608AF00911A99 /* TodoListViewModel.swift in Sources */,
 				06F34DD12B16088600911A99 /* TodoListView.swift in Sources */,
@@ -378,6 +397,7 @@
 				0660197A2B09F41100963D3B /* ContentView.swift in Sources */,
 				066019782B09F41100963D3B /* VoiceMemoApp.swift in Sources */,
 				06F34DE12B18FF6F00911A99 /* Todo.swift in Sources */,
+				0651C6342B431598006A9F83 /* MemoViewModel.swift in Sources */,
 				06F34DD82B16090E00911A99 /* MemoListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
