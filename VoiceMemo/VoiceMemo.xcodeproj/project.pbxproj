@@ -21,6 +21,9 @@
 		066019912B0F985600963D3B /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066019902B0F985600963D3B /* OnboardingView.swift */; };
 		066019932B0F991C00963D3B /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066019922B0F991C00963D3B /* OnboardingViewModel.swift */; };
 		0660199B2B0F9F9A00963D3B /* OnboardingContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0660199A2B0F9F9A00963D3B /* OnboardingContent.swift */; };
+		06E6380D2B664EC900E229D6 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E6380C2B664EC900E229D6 /* Double+Extensions.swift */; };
+		06E6380F2B664F4B00E229D6 /* VoiceRecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E6380E2B664F4B00E229D6 /* VoiceRecorderViewController.swift */; };
+		06E638112B664F5F00E229D6 /* VoiceRecorderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E638102B664F5F00E229D6 /* VoiceRecorderViewModel.swift */; };
 		06F34DC12B133D2C00911A99 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F34DC02B133D2C00911A99 /* Path.swift */; };
 		06F34DC32B133D3300911A99 /* PathType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F34DC22B133D3300911A99 /* PathType.swift */; };
 		06F34DC52B138D0400911A99 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F34DC42B138D0400911A99 /* HomeView.swift */; };
@@ -50,6 +53,9 @@
 		066019902B0F985600963D3B /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		066019922B0F991C00963D3B /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		0660199A2B0F9F9A00963D3B /* OnboardingContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContent.swift; sourceTree = "<group>"; };
+		06E6380C2B664EC900E229D6 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		06E6380E2B664F4B00E229D6 /* VoiceRecorderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecorderViewController.swift; sourceTree = "<group>"; };
+		06E638102B664F5F00E229D6 /* VoiceRecorderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecorderViewModel.swift; sourceTree = "<group>"; };
 		06F34DC02B133D2C00911A99 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		06F34DC22B133D3300911A99 /* PathType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathType.swift; sourceTree = "<group>"; };
 		06F34DC42B138D0400911A99 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -211,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				06F34DD92B18FACB00911A99 /* Date+Extensions.swift */,
+				06E6380C2B664EC900E229D6 /* Double+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -276,6 +283,8 @@
 		06F34DCE2B15FFEE00911A99 /* VoiceRecorder */ = {
 			isa = PBXGroup;
 			children = (
+				06E6380E2B664F4B00E229D6 /* VoiceRecorderViewController.swift */,
+				06E638102B664F5F00E229D6 /* VoiceRecorderViewModel.swift */,
 			);
 			path = VoiceRecorder;
 			sourceTree = "<group>";
@@ -376,6 +385,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06E6380D2B664EC900E229D6 /* Double+Extensions.swift in Sources */,
 				0651C6302B431531006A9F83 /* Memo.swift in Sources */,
 				0660199B2B0F9F9A00963D3B /* OnboardingContent.swift in Sources */,
 				06127D0D2B39C92100189DCD /* HomeViewModel.swift in Sources */,
@@ -384,12 +394,14 @@
 				06127D0F2B39C93D00189DCD /* TodoView.swift in Sources */,
 				06F34DD62B1608ED00911A99 /* MemoListView.swift in Sources */,
 				06F34DDE2B18FCB600911A99 /* CustomNavigationBar.swift in Sources */,
+				06E638112B664F5F00E229D6 /* VoiceRecorderViewModel.swift in Sources */,
 				06F34DC52B138D0400911A99 /* HomeView.swift in Sources */,
 				06127D112B39C94500189DCD /* TodoViewModel.swift in Sources */,
 				0651C6322B431590006A9F83 /* MemoView.swift in Sources */,
 				06F34DDC2B18FC5B00911A99 /* NavigationBtnType.swift in Sources */,
 				06F34DD32B1608AF00911A99 /* TodoListViewModel.swift in Sources */,
 				06F34DD12B16088600911A99 /* TodoListView.swift in Sources */,
+				06E6380F2B664F4B00E229D6 /* VoiceRecorderViewController.swift in Sources */,
 				06F34DC12B133D2C00911A99 /* Path.swift in Sources */,
 				0660198B2B0F967700963D3B /* AppDelegate.swift in Sources */,
 				06F34DDA2B18FACB00911A99 /* Date+Extensions.swift in Sources */,
