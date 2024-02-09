@@ -21,6 +21,10 @@
 		066019912B0F985600963D3B /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066019902B0F985600963D3B /* OnboardingView.swift */; };
 		066019932B0F991C00963D3B /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066019922B0F991C00963D3B /* OnboardingViewModel.swift */; };
 		0660199B2B0F9F9A00963D3B /* OnboardingContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0660199A2B0F9F9A00963D3B /* OnboardingContent.swift */; };
+		06E56E862B75EE0600AC1B97 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E56E852B75EE0600AC1B97 /* Time.swift */; };
+		06E56E882B762F6200AC1B97 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E56E872B762F6200AC1B97 /* Int+Extensions.swift */; };
+		06E56E8A2B7630E400AC1B97 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E56E892B7630E400AC1B97 /* TimerViewModel.swift */; };
+		06E56E8C2B7632DB00AC1B97 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E56E8B2B7632DB00AC1B97 /* TimerView.swift */; };
 		06E6380D2B664EC900E229D6 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E6380C2B664EC900E229D6 /* Double+Extensions.swift */; };
 		06E6380F2B664F4B00E229D6 /* VoiceRecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E6380E2B664F4B00E229D6 /* VoiceRecorderView.swift */; };
 		06E638112B664F5F00E229D6 /* VoiceRecorderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E638102B664F5F00E229D6 /* VoiceRecorderViewModel.swift */; };
@@ -53,6 +57,10 @@
 		066019902B0F985600963D3B /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		066019922B0F991C00963D3B /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		0660199A2B0F9F9A00963D3B /* OnboardingContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContent.swift; sourceTree = "<group>"; };
+		06E56E852B75EE0600AC1B97 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		06E56E872B762F6200AC1B97 /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		06E56E892B7630E400AC1B97 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		06E56E8B2B7632DB00AC1B97 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		06E6380C2B664EC900E229D6 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		06E6380E2B664F4B00E229D6 /* VoiceRecorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecorderView.swift; sourceTree = "<group>"; };
 		06E638102B664F5F00E229D6 /* VoiceRecorderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecorderViewModel.swift; sourceTree = "<group>"; };
@@ -170,6 +178,7 @@
 				06F34DDF2B18FF6000911A99 /* Todo */,
 				066019992B0F9F8800963D3B /* Path */,
 				066019982B0F9F7F00963D3B /* Onboarding */,
+				06E56E842B75EDED00AC1B97 /* Timer */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -218,6 +227,7 @@
 			children = (
 				06F34DD92B18FACB00911A99 /* Date+Extensions.swift */,
 				06E6380C2B664EC900E229D6 /* Double+Extensions.swift */,
+				06E56E872B762F6200AC1B97 /* Int+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -246,9 +256,19 @@
 			path = Path;
 			sourceTree = "<group>";
 		};
+		06E56E842B75EDED00AC1B97 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				06E56E852B75EE0600AC1B97 /* Time.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
 		06F34DC62B138D2400911A99 /* Timer */ = {
 			isa = PBXGroup;
 			children = (
+				06E56E892B7630E400AC1B97 /* TimerViewModel.swift */,
+				06E56E8B2B7632DB00AC1B97 /* TimerView.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -385,6 +405,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06E56E8C2B7632DB00AC1B97 /* TimerView.swift in Sources */,
 				06E6380D2B664EC900E229D6 /* Double+Extensions.swift in Sources */,
 				0651C6302B431531006A9F83 /* Memo.swift in Sources */,
 				0660199B2B0F9F9A00963D3B /* OnboardingContent.swift in Sources */,
@@ -400,15 +421,18 @@
 				0651C6322B431590006A9F83 /* MemoView.swift in Sources */,
 				06F34DDC2B18FC5B00911A99 /* NavigationBtnType.swift in Sources */,
 				06F34DD32B1608AF00911A99 /* TodoListViewModel.swift in Sources */,
+				06E56E862B75EE0600AC1B97 /* Time.swift in Sources */,
 				06F34DD12B16088600911A99 /* TodoListView.swift in Sources */,
 				06E6380F2B664F4B00E229D6 /* VoiceRecorderView.swift in Sources */,
 				06F34DC12B133D2C00911A99 /* Path.swift in Sources */,
 				0660198B2B0F967700963D3B /* AppDelegate.swift in Sources */,
 				06F34DDA2B18FACB00911A99 /* Date+Extensions.swift in Sources */,
+				06E56E8A2B7630E400AC1B97 /* TimerViewModel.swift in Sources */,
 				066019912B0F985600963D3B /* OnboardingView.swift in Sources */,
 				0660197A2B09F41100963D3B /* ContentView.swift in Sources */,
 				066019782B09F41100963D3B /* VoiceMemoApp.swift in Sources */,
 				06F34DE12B18FF6F00911A99 /* Todo.swift in Sources */,
+				06E56E882B762F6200AC1B97 /* Int+Extensions.swift in Sources */,
 				0651C6342B431598006A9F83 /* MemoViewModel.swift in Sources */,
 				06F34DD82B16090E00911A99 /* MemoListViewModel.swift in Sources */,
 			);
