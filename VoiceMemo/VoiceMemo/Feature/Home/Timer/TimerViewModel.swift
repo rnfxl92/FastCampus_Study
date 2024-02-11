@@ -22,7 +22,7 @@ class TimerViewModel: ObservableObject {
         timer: Timer? = nil,
         timeRemaining: Int = 0,
         isPaused: Bool = false,
-        notificationService: NotificationService
+        notificationService: NotificationService = .init()
     ) {
         self.isDisplaySetTimeView = isDisplaySetTimeView
         self.time = time

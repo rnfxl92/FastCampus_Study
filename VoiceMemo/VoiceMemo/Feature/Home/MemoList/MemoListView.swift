@@ -10,6 +10,7 @@ import SwiftUI
 struct MemoListView: View {
     @EnvironmentObject private var pathModel: PathModel
     @EnvironmentObject private var memoListViewModel: MemoListViewModel
+    @EnvironmentObject private var homeViewModel: HomeViewModel
     
     var body: some View {
         ZStack {
@@ -45,12 +46,19 @@ struct MemoListView: View {
         }
         .alert(
             "메모 \(memoListViewModel.removeMemoCount)개 삭제 하시겠습니까?",
-            isPresented: $memoListViewModel.isDisplayRemoveMemoAlert) {
-                Button("삭제", role: .destructive) {
-                    memoListViewModel.removeBtnTapped()
-                }
-                Button("취소", role: .cancel) { }
+            isPresented: $memoListViewModel.isDisplayRemoveMemoAlert
+        ) {
+            Button("삭제", role: .destructive) {
+                memoListViewModel.removeBtnTapped()
             }
+            Button("취소", role: .cancel) { }
+        }
+        .onChange(
+            of: memoListViewModel.memos,
+            perform: { memos in
+                homeViewModel.setMemosCount(memos.count)
+            }
+        )
     }
 }
 
@@ -68,6 +76,7 @@ private struct TitleView: View {
             Spacer()
         }
         .font(.system(size: 30, weight: .bold))
+        .padding(.leading, 20)
     }
 }
 
@@ -123,6 +132,7 @@ private struct MemoListContentView: View {
 private struct MemoCellView: View {
     @EnvironmentObject private var pathModel: PathModel
     @EnvironmentObject private var memoListViewModel: MemoListViewModel
+    
     @State private var isRemoveSelected: Bool
     private var memo: Memo
     

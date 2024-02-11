@@ -24,8 +24,10 @@ struct OnboardingView: View {
                         case .homeView:
                             HomeView()
                                 .navigationBarBackButtonHidden()
+                                .environmentObject(todoListViewModel)
+                                .environmentObject(memoListViewModel)
                         case .todoView:
-                            TodoListView()
+                            TodoView()
                                 .navigationBarBackButtonHidden()
                                 .environmentObject(todoListViewModel)
                         case let .memoView(isCreateMode, memo):

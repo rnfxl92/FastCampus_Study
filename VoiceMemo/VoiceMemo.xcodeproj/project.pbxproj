@@ -27,6 +27,7 @@
 		06E56E8C2B7632DB00AC1B97 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E56E8B2B7632DB00AC1B97 /* TimerView.swift */; };
 		06E56E8E2B76647B00AC1B97 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E56E8D2B76647B00AC1B97 /* NotificationService.swift */; };
 		06E56E912B79122F00AC1B97 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E56E902B79122F00AC1B97 /* SettingView.swift */; };
+		06E56E942B791B0900AC1B97 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E56E932B791B0900AC1B97 /* Tab.swift */; };
 		06E6380D2B664EC900E229D6 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E6380C2B664EC900E229D6 /* Double+Extensions.swift */; };
 		06E6380F2B664F4B00E229D6 /* VoiceRecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E6380E2B664F4B00E229D6 /* VoiceRecorderView.swift */; };
 		06E638112B664F5F00E229D6 /* VoiceRecorderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E638102B664F5F00E229D6 /* VoiceRecorderViewModel.swift */; };
@@ -65,6 +66,7 @@
 		06E56E8B2B7632DB00AC1B97 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		06E56E8D2B76647B00AC1B97 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		06E56E902B79122F00AC1B97 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		06E56E932B791B0900AC1B97 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		06E6380C2B664EC900E229D6 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		06E6380E2B664F4B00E229D6 /* VoiceRecorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecorderView.swift; sourceTree = "<group>"; };
 		06E638102B664F5F00E229D6 /* VoiceRecorderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecorderViewModel.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 		066019892B0F93F200963D3B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				06E56E922B791AFE00AC1B97 /* Home */,
 				0651C62E2B431527006A9F83 /* Memo */,
 				06F34DDF2B18FF6000911A99 /* Todo */,
 				066019992B0F9F8800963D3B /* Path */,
@@ -267,6 +270,14 @@
 				06E56E852B75EE0600AC1B97 /* Time.swift */,
 			);
 			path = Timer;
+			sourceTree = "<group>";
+		};
+		06E56E922B791AFE00AC1B97 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				06E56E932B791B0900AC1B97 /* Tab.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		06F34DC62B138D2400911A99 /* Timer */ = {
@@ -438,6 +449,7 @@
 				06E56E8A2B7630E400AC1B97 /* TimerViewModel.swift in Sources */,
 				066019912B0F985600963D3B /* OnboardingView.swift in Sources */,
 				0660197A2B09F41100963D3B /* ContentView.swift in Sources */,
+				06E56E942B791B0900AC1B97 /* Tab.swift in Sources */,
 				066019782B09F41100963D3B /* VoiceMemoApp.swift in Sources */,
 				06F34DE12B18FF6F00911A99 /* Todo.swift in Sources */,
 				06E56E882B762F6200AC1B97 /* Int+Extensions.swift in Sources */,
