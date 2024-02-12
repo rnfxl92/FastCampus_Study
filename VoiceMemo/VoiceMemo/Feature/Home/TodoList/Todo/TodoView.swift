@@ -46,6 +46,8 @@ struct TodoView: View {
             
             SelectDayView(todoViewModel: todoViewModel)
                 .padding(.leading, 20)
+            
+            Spacer()
         }
     }
 }
@@ -54,7 +56,7 @@ struct TodoView: View {
 private struct TitleView: View {
     fileprivate var body: some View {
         HStack {
-            Text("To do lsit를\n추가해 보세요.")
+            Text("To do list를\n추가해 보세요.")
             
             Spacer()
         }
